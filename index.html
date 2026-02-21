@@ -6,7 +6,7 @@
     <title>Macsint-NET | Solusi CCTV & IT Infrastructure</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
         .heading-bold { font-family: 'Montserrat', sans-serif; }
@@ -16,6 +16,8 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+        .vision-card { transition: all 0.3s ease; }
+        .vision-card:hover { transform: translateY(-5px); border-color: #f39c12; }
     </style>
 </head>
 <body class="bg-gray-50 text-slate-800">
@@ -26,7 +28,7 @@
                 <div class="flex items-center gap-4">
                     <img src="logo.jpg" alt="Logo Macsint" class="w-14 h-14 rounded-full border-2 border-orange-500 object-cover shadow-lg">
                     <div>
-                        <h1 class="text-2xl font-black tracking-tighter leading-none uppercase">MACSINT-NET</h1>
+                        <h1 class="text-2xl font-black tracking-tighter leading-none uppercase text-white">MACSINT-NET</h1>
                         <p class="text-[10px] text-blue-400 tracking-[0.2em] uppercase font-bold mt-1 italic">Multi Access IT and Network Solution</p>
                     </div>
                 </div>
@@ -40,15 +42,15 @@
         <div class="bg-[#243b55] text-white py-3">
             <div class="container mx-auto px-6 flex justify-between items-center">
                 <nav>
-                    <ul class="flex gap-8 text-xs md:text-sm font-black uppercase tracking-widest">
-                        <li><a href="#" class="text-orange-400 border-b-2 border-orange-400 pb-1">#Beranda</a></li>
+                    <ul class="flex gap-4 md:gap-8 text-[10px] md:text-sm font-black uppercase tracking-widest">
+                        <li><a href="#" class="text-orange-400">#Beranda</a></li>
+                        <li><a href="#tentangkami" class="hover:text-orange-400 transition">#Tentang Kami</a></li>
                         <li><a href="#paket" class="hover:text-orange-400 transition">#Paket Promo</a></li>
-                        <li><a href="#layanan" class="hover:text-orange-400 transition">#Layanan Lainnya</a></li>
-                        <li><a href="#kontak" class="hover:text-orange-400 transition">#Hubungi Kami</a></li>
+                        <li><a href="#layanan" class="hover:text-orange-400 transition">#Layanan</a></li>
                     </ul>
                 </nav>
-                <a href="https://wa.me/6285771514980" class="bg-[#4caf50] hover:bg-green-600 px-5 py-2 rounded font-black text-xs md:text-sm flex items-center gap-2 transition shadow-lg transform hover:scale-105">
-                    <i class="fab fa-whatsapp text-lg text-white"></i> <span class="text-white">CHAT SUPPORT</span>
+                <a href="https://wa.me/6285771514980" class="bg-[#4caf50] hover:bg-green-600 px-4 py-2 rounded font-black text-[10px] md:text-sm flex items-center gap-2 transition shadow-lg transform hover:scale-105">
+                    <i class="fab fa-whatsapp text-lg text-white"></i> <span class="text-white uppercase">Chat Support</span>
                 </a>
             </div>
         </div>
@@ -58,83 +60,120 @@
         <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
             <div class="md:w-1/2 z-10 text-center md:text-left">
                 <p class="text-orange-500 font-black tracking-[0.4em] uppercase mb-4 italic text-sm">Professional IT & Security Solution</p>
-                <h2 class="heading-bold text-5xl md:text-7xl leading-[1] mb-8">
+                <h2 class="heading-bold text-5xl md:text-7xl leading-[1] mb-8 uppercase">
                     TINGKATKAN <br>
-                    KEAMANAN ANDA <br>
-                    <span class="text-orange-gradient italic uppercase">Ke Level Tinggi</span>
+                    KEAMANAN <br>
+                    <span class="text-orange-gradient italic">LEVEL TINGGI</span>
                 </h2>
                 <div class="bg-slate-800/60 border-l-8 border-orange-500 p-6 rounded-r-2xl max-w-lg mb-10 shadow-2xl backdrop-blur-sm text-left">
                     <p class="text-lg text-slate-200 italic leading-relaxed">
-                        Sistem keamanan dengan memantau peristiwa secara real-time, memberikan bukti kuat dan akurat untuk penegakan hukum. Memantau keadaan menjadi mudah karena tersambung melalui perangkat online.
+                        Pantau setiap peristiwa secara real-time dari smartphone Anda. Memberikan bukti kuat dan akurat untuk perlindungan total.
                     </p>
                 </div>
-                <a href="#paket" class="bg-orange-500 hover:bg-orange-600 text-white px-10 py-4 rounded-xl font-black tracking-widest transition shadow-lg inline-block">
-                    CEK PROMO HARI INI
-                </a>
+                <a href="#paket" class="bg-orange-500 hover:bg-orange-600 text-white px-10 py-4 rounded-xl font-black tracking-widest transition shadow-lg inline-block uppercase text-xs">Cek Promo Hari Ini</a>
             </div>
 
             <div class="md:w-1/2 mt-12 md:mt-0 relative flex justify-center items-center">
                 <div class="absolute w-64 h-64 md:w-96 md:h-96 bg-blue-500/30 rounded-full blur-[100px] animate-pulse"></div>
-                <img src="cctv.png" alt="CCTV Macsint" class="relative w-full max-w-md drop-shadow-[0_35px_35px_rgba(0,0,0,0.6)] transform hover:scale-105 transition duration-700 ease-in-out">
+                <img src="cctv.png" alt="CCTV Macsint" class="relative w-full max-w-lg drop-shadow-[0_35px_35px_rgba(0,0,0,0.6)] transform hover:scale-105 transition duration-700 ease-in-out">
             </div>
         </div>
     </section>
 
-    <section id="paket" class="py-24 bg-white">
+    <section id="tentangkami" class="py-24 bg-white overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row gap-16 items-center mb-24">
+                <div class="md:w-1/2 relative">
+                    <div class="absolute -top-4 -left-4 w-24 h-24 bg-orange-500 rounded-full z-0 opacity-20"></div>
+                    <img src="logo.jpg" alt="Macsint Profile" class="relative z-10 rounded-3xl shadow-2xl border-b-8 border-blue-900 w-full max-w-sm mx-auto">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="heading-bold text-4xl mb-6 uppercase tracking-tighter italic text-blue-900">Tentang <span class="text-orange-500">Kami</span></h2>
+                    <p class="text-slate-700 leading-relaxed text-lg mb-6 font-medium text-justify">
+                        Kami adalah mitra strategis dalam penyediaan jasa integrasi sistem keamanan dan infrastruktur IT yang berdedikasi tinggi. Dengan menggabungkan keahlian teknis dan teknologi terkini, kami menghadirkan solusi komprehensif untuk menjaga keberlangsungan bisnis serta melindungi aset berharga Anda. Kepercayaan Anda adalah prioritas kami dalam membangun ekosistem digital yang aman, cerdas, dan efisien.
+                    </p>
+                    <div class="bg-blue-900 p-8 rounded-2xl text-white shadow-xl italic border-r-8 border-orange-500">
+                        <h4 class="font-black text-orange-500 uppercase tracking-widest mb-3">Visi Kami</h4>
+                        <p class="text-slate-200 italic">"Menjadi pemimpin terdepan dalam industri integrasi sistem keamanan dan infrastruktur IT yang dikenal karena inovasi, keandalan, dan komitmen berkelanjutan dalam melindungi masa depan digital pelanggan kami."</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mb-16">
+                <h2 class="heading-bold text-3xl uppercase italic tracking-widest">Misi <span class="text-blue-600">Perusahaan</span></h2>
+                <div class="w-20 h-1.5 bg-orange-500 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="vision-card bg-slate-50 p-8 rounded-2xl border border-slate-200">
+                    <div class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center text-white mb-6"><i class="fas fa-bullseye"></i></div>
+                    <h5 class="font-black uppercase text-xs mb-3">Solusi Terpersonalisasi</h5>
+                    <p class="text-xs text-slate-500 leading-relaxed">Menyediakan layanan integrasi IT dan keamanan yang dirancang khusus sesuai skala dan kebutuhan unik bisnis klien.</p>
+                </div>
+                <div class="vision-card bg-slate-50 p-8 rounded-2xl border border-slate-200">
+                    <div class="w-12 h-12 bg-orange-500 rounded-xl flex items-center justify-center text-white mb-6"><i class="fas fa-microchip"></i></div>
+                    <h5 class="font-black uppercase text-xs mb-3">Teknologi Mutakhir</h5>
+                    <p class="text-xs text-slate-500 leading-relaxed">Terus mengimplementasikan teknologi terbaru guna memastikan sistem perlindungan yang tangguh dan relevan.</p>
+                </div>
+                <div class="vision-card bg-slate-50 p-8 rounded-2xl border border-slate-200">
+                    <div class="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center text-white mb-6"><i class="fas fa-check-double"></i></div>
+                    <h5 class="font-black uppercase text-xs mb-3">Keunggulan Operasional</h5>
+                    <p class="text-xs text-slate-500 leading-relaxed">Menjamin standar kualitas tinggi dalam instalasi, pemeliharaan, hingga dukungan teknis purnajual.</p>
+                </div>
+                <div class="vision-card bg-slate-50 p-8 rounded-2xl border border-slate-200">
+                    <div class="w-12 h-12 bg-green-600 rounded-xl flex items-center justify-center text-white mb-6"><i class="fas fa-handshake"></i></div>
+                    <h5 class="font-black uppercase text-xs mb-3">Kemitraan Jangka Panjang</h5>
+                    <p class="text-xs text-slate-500 leading-relaxed">Mengedepankan integritas dan profesionalisme demi menciptakan hubungan kerja sama yang berkelanjutan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="paket" class="py-24 bg-slate-100">
         <div class="container mx-auto px-6 text-center">
             <h2 class="heading-bold text-4xl mb-4 uppercase tracking-tighter italic">Daftar Paket Promo CCTV</h2>
-            <p class="text-slate-500 font-bold mb-12">HD TVI Hikvision + Instalasi FOR SOHO</p>
+            <p class="text-slate-500 font-bold mb-12">HIKVISION ORIGINAL + INSTALASI PROFESIONAL</p>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div class="bg-white p-8 rounded-3xl shadow-xl border-b-8 border-slate-400 group hover:-translate-y-2 transition">
                     <h3 class="font-black text-xl mb-1 uppercase italic">Ekonomis</h3>
                     <p class="text-2xl font-black text-slate-800 mb-6 pb-4 border-b">Rp 3.899.000</p>
-                    <ul class="text-left text-sm space-y-3 mb-8 text-slate-600 font-semibold">
+                    <ul class="text-left text-[13px] space-y-3 mb-8 text-slate-600 font-semibold">
                         <li><i class="fas fa-check text-green-500 mr-2"></i> 4 CCTV 2 MP</li>
                         <li><i class="fas fa-check text-green-500 mr-2"></i> DVR HDTVI 1080 PX</li>
                         <li><i class="fas fa-check text-green-500 mr-2"></i> 1 TeraByte HD</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i> Power Supply Central</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i> Free Cable RG59 100M</li>
                     </ul>
-                    <a href="https://wa.me/6285771514980" class="block bg-slate-800 text-white py-3 rounded-xl font-bold hover:bg-blue-600 transition uppercase text-xs">Pesan</a>
+                    <a href="https://wa.me/6285771514980" class="block bg-slate-800 text-white py-3 rounded-xl font-bold hover:bg-blue-600 transition uppercase text-xs">Pesan Sekarang</a>
                 </div>
-
-                <div class="bg-white p-8 rounded-3xl shadow-2xl border-b-8 border-orange-500 scale-105 z-10 group hover:-translate-y-2 transition">
+                <div class="bg-white p-8 rounded-3xl shadow-2xl border-b-8 border-orange-500 scale-105 z-10 group hover:-translate-y-2 transition ring-4 ring-orange-500/10">
+                    <div class="bg-orange-500 text-white text-[10px] font-black py-1 mb-4 rounded uppercase tracking-widest">Paling Populer</div>
                     <h3 class="font-black text-xl mb-1 uppercase italic text-orange-600">Best Seller</h3>
                     <p class="text-2xl font-black text-orange-600 mb-6 pb-4 border-b">Rp 4.700.000</p>
-                    <ul class="text-left text-sm space-y-3 mb-8 text-slate-600 font-semibold">
-                        <li><i class="fas fa-check text-green-500 mr-2"></i> 4 CCTV 2 MP</li>
+                    <ul class="text-left text-[13px] space-y-3 mb-8 text-slate-600 font-semibold">
+                        <li><i class="fas fa-check text-green-500 mr-2 text-orange-500"></i> 4 CCTV 2 MP</li>
                         <li><i class="fas fa-check text-green-500 mr-2"></i> DVR HDTVI 1080 PX</li>
                         <li><i class="fas fa-check text-green-500 mr-2 text-orange-500"></i> 2 TeraByte HD</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i> Power Supply Central</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i> Free Cable RG59 100M</li>
                     </ul>
-                    <a href="https://wa.me/6285771514980" class="block bg-orange-500 text-white py-3 rounded-xl font-black hover:bg-orange-600 transition uppercase text-xs shadow-lg">Pesan</a>
+                    <a href="https://wa.me/6285771514980" class="block bg-orange-500 text-white py-3 rounded-xl font-black hover:bg-orange-600 transition uppercase text-xs shadow-lg">Beli Sekarang</a>
                 </div>
-
                 <div class="bg-white p-8 rounded-3xl shadow-xl border-b-8 border-blue-600 group hover:-translate-y-2 transition">
                     <h3 class="font-black text-xl mb-1 uppercase italic">Best Seller 8CH</h3>
                     <p class="text-2xl font-black text-slate-800 mb-6 pb-4 border-b">Rp 7.999.000</p>
-                    <ul class="text-left text-sm space-y-3 mb-8 text-slate-600 font-semibold">
-                        <li><i class="fas fa-check text-green-500 mr-2"></i> 8 CCTV 2MP</li>
+                    <ul class="text-left text-[13px] space-y-3 mb-8 text-slate-600 font-semibold">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> 8 CCTV 2 MP</li>
                         <li><i class="fas fa-check text-green-500 mr-2"></i> DVR HDTVI 1080 PX</li>
                         <li><i class="fas fa-check text-green-500 mr-2"></i> 2 TeraByte HD</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i> Power Supply Central</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i> Free Cable RG59 100M</li>
                     </ul>
-                    <a href="https://wa.me/6285771514980" class="block bg-blue-600 text-white py-3 rounded-xl font-bold hover:bg-blue-700 transition uppercase text-xs">Pesan</a>
+                    <a href="https://wa.me/6285771514980" class="block bg-blue-600 text-white py-3 rounded-xl font-bold hover:bg-blue-700 transition uppercase text-xs">Pesan Sekarang</a>
                 </div>
-
                 <div class="bg-white p-8 rounded-3xl shadow-xl border-b-8 border-yellow-500 group hover:-translate-y-2 transition">
-                    <h3 class="font-black text-xl mb-1 uppercase italic">Premium</h3>
+                    <h3 class="font-black text-xl mb-1 uppercase italic">Premium 5MP</h3>
                     <p class="text-2xl font-black text-slate-800 mb-6 pb-4 border-b">Rp 6.199.000</p>
-                    <ul class="text-left text-sm space-y-3 mb-8 text-slate-600 font-semibold">
-                        <li><i class="fas fa-check text-green-500 mr-2"></i> 4 CCTV HD 5 MP</li>
+                    <ul class="text-left text-[13px] space-y-3 mb-8 text-slate-600 font-semibold">
+                        <li><i class="fas fa-star text-yellow-500 mr-2 font-bold"></i> 4 CCTV HD 5 MP</li>
                         <li><i class="fas fa-check text-green-500 mr-2"></i> DVR HDTVI 1080 PX</li>
                         <li><i class="fas fa-check text-green-500 mr-2"></i> 2 TeraByte HD</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i> Power Supply Central</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i> Free Cable RG59 100M</li>
                     </ul>
-                    <a href="https://wa.me/6285771514980" class="block bg-slate-800 text-white py-3 rounded-xl font-bold hover:bg-yellow-600 transition uppercase text-xs">Pesan</a>
+                    <a href="https://wa.me/6285771514980" class="block bg-slate-800 text-white py-3 rounded-xl font-bold hover:bg-yellow-600 transition uppercase text-xs">Pesan Sekarang</a>
                 </div>
             </div>
         </div>
@@ -144,51 +183,38 @@
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row items-center gap-12">
                 <div class="md:w-1/2">
-                    <h2 class="heading-bold text-4xl md:text-5xl mb-6 uppercase tracking-tighter italic">Layanan IT <br><span class="text-orange-500">Infrastructure</span></h2>
-                    <p class="text-slate-400 text-lg mb-8 italic">
-                        Selain sistem keamanan, kami memiliki keahlian mendalam dalam membangun infrastruktur jaringan yang stabil dan modern untuk berbagai skala instansi.
-                    </p>
-                    <div class="grid grid-cols-1 gap-4">
-                        <div class="bg-slate-800 p-6 rounded-2xl border-l-4 border-orange-500 hover:bg-slate-700 transition">
-                            <h4 class="font-black text-lg mb-2 uppercase">Jasa Instalasi Network</h4>
-                            <p class="text-sm text-slate-300">Pemasangan jaringan LAN, WiFi, dan Fiber Optic untuk Kantor, Sekolah, dan Instansi Pemerintah.</p>
+                    <h2 class="heading-bold text-4xl mb-6 uppercase italic tracking-tighter">Layanan IT <br><span class="text-orange-500">Infrastructure</span></h2>
+                    <div class="space-y-4">
+                        <div class="bg-white/5 p-6 rounded-2xl border-l-4 border-orange-500 hover:bg-white/10 transition">
+                            <h4 class="font-bold text-lg mb-2 uppercase text-orange-400">Instalasi CCTV Profesional</h4>
+                            <p class="text-sm text-slate-400 font-medium">Layanan pemasangan sistem kamera keamanan untuk Perkantoran, Sekolah, Instansi Pemerintah, dan Area Industri dengan integrasi pemantauan online.</p>
                         </div>
-                        <div class="bg-slate-800 p-6 rounded-2xl border-l-4 border-blue-500 hover:bg-slate-700 transition">
-                            <h4 class="font-black text-lg mb-2 uppercase">Server & Storage</h4>
-                            <p class="text-sm text-slate-300">Pengaturan server lokal, sistem backup data, dan integrasi storage untuk keamanan data IT Anda.</p>
+                        <div class="bg-white/5 p-6 rounded-2xl border-l-4 border-blue-500 hover:bg-white/10 transition">
+                            <h4 class="font-bold text-lg mb-2 uppercase text-blue-400">Instalasi Network & WiFi</h4>
+                            <p class="text-sm text-slate-400 font-medium">Penarikan kabel LAN, konfigurasi Access Point WiFi, dan penyambungan Fiber Optic untuk infrastruktur jaringan yang stabil.</p>
                         </div>
-                        <div class="bg-slate-800 p-6 rounded-2xl border-l-4 border-green-500 hover:bg-slate-700 transition">
-                            <h4 class="font-black text-lg mb-2 uppercase">Maintenance Service</h4>
-                            <p class="text-sm text-slate-300">Layanan perawatan rutin untuk memastikan seluruh infrastruktur IT Anda berjalan 24/7 tanpa kendala.</p>
+                        <div class="bg-white/5 p-6 rounded-2xl border-l-4 border-green-500 hover:bg-white/10 transition">
+                            <h4 class="font-bold text-lg mb-2 uppercase text-green-400">Maintenance & Service</h4>
+                            <p class="text-sm text-slate-400 font-medium">Perawatan rutin perangkat IT dan sistem keamanan untuk memastikan semua berjalan optimal 24/7 tanpa kendala.</p>
                         </div>
                     </div>
                 </div>
-                <div class="md:w-1/2">
-                    <div class="grid grid-cols-2 gap-4">
-                        <div class="bg-orange-500 aspect-square rounded-3xl flex items-center justify-center p-8 text-center">
-                            <div>
-                                <i class="fas fa-building text-4xl mb-4"></i>
-                                <p class="font-black uppercase text-xs tracking-widest">Kantor</p>
-                            </div>
-                        </div>
-                        <div class="bg-blue-600 aspect-square rounded-3xl flex items-center justify-center p-8 text-center">
-                            <div>
-                                <i class="fas fa-school text-4xl mb-4"></i>
-                                <p class="font-black uppercase text-xs tracking-widest">Sekolah</p>
-                            </div>
-                        </div>
-                        <div class="bg-slate-700 aspect-square rounded-3xl flex items-center justify-center p-8 text-center">
-                            <div>
-                                <i class="fas fa-university text-4xl mb-4"></i>
-                                <p class="font-black uppercase text-xs tracking-widest">Instansi</p>
-                            </div>
-                        </div>
-                        <div class="bg-slate-800 aspect-square rounded-3xl flex items-center justify-center p-8 text-center border border-slate-600">
-                            <div>
-                                <i class="fas fa-network-wired text-4xl mb-4 text-orange-500"></i>
-                                <p class="font-black uppercase text-xs tracking-widest">Dan Lain-lain</p>
-                            </div>
-                        </div>
+                <div class="md:w-1/2 grid grid-cols-2 gap-4">
+                    <div class="bg-orange-500 aspect-square rounded-3xl flex flex-col items-center justify-center text-center p-4 shadow-xl">
+                        <i class="fas fa-building text-4xl mb-3"></i>
+                        <p class="text-[10px] font-black uppercase">Perkantoran</p>
+                    </div>
+                    <div class="bg-blue-600 aspect-square rounded-3xl flex flex-col items-center justify-center text-center p-4 shadow-xl">
+                        <i class="fas fa-school text-4xl mb-3"></i>
+                        <p class="text-[10px] font-black uppercase">Sekolah</p>
+                    </div>
+                    <div class="bg-slate-700 aspect-square rounded-3xl flex flex-col items-center justify-center text-center p-4 border border-slate-600">
+                        <i class="fas fa-university text-4xl mb-3"></i>
+                        <p class="text-[10px] font-black uppercase">Instansi</p>
+                    </div>
+                    <div class="bg-slate-800 aspect-square rounded-3xl flex flex-col items-center justify-center text-center p-4 border border-slate-600">
+                        <i class="fas fa-network-wired text-4xl mb-3 text-orange-500"></i>
+                        <p class="text-[10px] font-black uppercase">Dan Lain-lain</p>
                     </div>
                 </div>
             </div>
@@ -197,25 +223,25 @@
 
     <footer id="kontak" class="bg-[#0f172a] text-white py-20 text-center">
         <div class="container mx-auto px-6">
-            <h2 class="heading-bold text-3xl mb-12 uppercase italic">Hubungi Macsint-NET</h2>
-            <div class="flex flex-col md:flex-row justify-center gap-10 items-center">
+            <h2 class="heading-bold text-3xl mb-12 uppercase italic tracking-tighter">Hubungi Macsint-NET</h2>
+            <div class="flex flex-col md:flex-row justify-center gap-6 items-center">
                 <a href="https://wa.me/6285771514980" class="group bg-slate-800 p-8 rounded-3xl border border-slate-700 hover:border-green-500 transition w-full md:w-auto flex items-center gap-6 shadow-2xl">
                     <i class="fab fa-whatsapp text-4xl text-green-500"></i>
                     <div class="text-left">
-                        <p class="text-[10px] uppercase font-black text-slate-400">WhatsApp</p>
+                        <p class="text-[10px] uppercase font-black text-slate-400">Hubungi Kami</p>
                         <p class="text-xl font-black">0857-7151-4980</p>
                     </div>
                 </a>
-                <div class="group bg-slate-800 p-8 rounded-3xl border border-slate-700 w-full md:w-auto flex items-center gap-6 shadow-2xl">
+                <div class="bg-slate-800 p-8 rounded-3xl border border-slate-700 w-full md:w-auto flex items-center gap-6">
                     <i class="far fa-envelope text-4xl text-orange-500"></i>
                     <div class="text-left">
-                        <p class="text-[10px] uppercase font-black text-slate-400">Email</p>
-                        <p class="text-xl font-black">Macsint767@gmail.com</p>
+                        <p class="text-[10px] uppercase font-black text-slate-400">Email Admin</p>
+                        <p class="text-xl font-black text-sm md:text-xl">Macsint767@gmail.com</p>
                     </div>
                 </div>
             </div>
-            <p class="mt-16 text-slate-600 text-[10px] font-black uppercase tracking-[0.5em]">
-                © 2026 Macsint-NET Solutions
+            <p class="mt-20 text-slate-600 text-[10px] font-black uppercase tracking-[0.5em] pt-8 border-t border-slate-800">
+                &copy; 2026 Macsint-NET Solutions | IT Infrastructure & Security Professional
             </p>
         </div>
     </footer>
